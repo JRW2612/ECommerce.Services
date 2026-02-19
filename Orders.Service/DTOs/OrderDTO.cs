@@ -1,0 +1,39 @@
+﻿namespace Orders.Service.DTOs
+{
+    public record OrderDTO
+   (
+        int Id,
+    string? UserName,
+    decimal? TotalPrice,
+    string? FirstName,
+    string? LastName,
+    string EmailAddress,
+    string? AddressLine,
+    string? Country,
+    string? State,
+    string? ZipCode,
+    string? CardName,
+    string? CardNumber,
+    string? CVV,
+    DateTime? ExpirationDate,
+    int PaymentMethod
+);
+
+    public record CheckoutOrderDTO(
+         string? UserName,
+    decimal? TotalPrice,
+    string? FirstName,
+    string? LastName,
+    string EmailAddress,
+    string? AddressLine,
+    string? Country,
+    string? State,
+    string? ZipCode,
+    string? CardName,
+    string? CardNumber,
+    string? CVV,
+    DateTime? ExpirationDate,
+    int PaymentMethod
+        );
+
+}

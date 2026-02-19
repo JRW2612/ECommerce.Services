@@ -1,0 +1,32 @@
+﻿[
+  {
+    "Id": "63ca5d4bc3a8a58f47929001",
+    "Name": "Shoes",
+    "Summary": "Footwear"
+  },
+  {
+    "Id": "63ca5d4bc3a8a58f47929002",
+    "Name": "Rackets",
+    "Summary": "Rackets and accessories"
+  },
+  {
+    "Id": "63ca5d4bc3a8a58f47929003",
+    "Name": "Bags",
+    "Summary": "Bags and cases"
+  },
+  {
+    "Id": "63ca5d4bc3a8a58f47929004",
+    "Name": "Shuttlecocks",
+    "Summary": "Shuttlecocks"
+  },
+  {
+    "Id": "63ca5d4bc3a8a58f47929005",
+    "Name": "Grips",
+    "Summary": "Grips and handles"
+  },
+  {
+    "Id": "63ca5d4bc3a8a58f47929006",
+    "Name": "Apparel",
+    "Summary": "Clothing and apparel"
+  }
+]

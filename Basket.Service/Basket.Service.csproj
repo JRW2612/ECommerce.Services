@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>6a6877dd-ac1b-4fc8-8a5b-3e3c986dd082</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Google.Protobuf" Version="3.33.5" />
+
+		<PackageReference Include="Grpc.AspNetCore" Version="2.76.0" />
+		<PackageReference Include="Grpc.Net.Client" Version="2.76.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.78.0" PrivateAssets="all" />
+
+		<PackageReference Include="MassTransit" Version="8.5.7" />
+		<PackageReference Include="MassTransit.RabbitMQ" Version="8.5.7" />
+
+		<PackageReference Include="MediatR" Version="14.0.0" />
+
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.13" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="10.0.3" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.4" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\Discount.Service\Discount.Service.csproj" />
+		<ProjectReference Include="..\EventBus.Messages\EventBus.Messages.csproj" />
+		<ProjectReference Include="..\Logging\Common.Logging.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Protobuf Include="Protos\discount.proto" GrpcServices="Client" />
+	</ItemGroup>
+</Project>

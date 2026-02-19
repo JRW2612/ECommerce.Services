@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/EcommerceApiGateway/">
+    <Project Path="ECommerceApiGateWay/ECommerceApiGateWay.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="EventBus.Messages/EventBus.Messages.csproj" />
+    <Project Path="Logging/Common.Logging.csproj" />
+  </Folder>
+  <Folder Name="/Services/">
+    <Project Path="Basket.Service/Basket.Service.csproj" />
+    <Project Path="Catalog.Service/Catalog.Service.csproj" />
+    <Project Path="Discount.Service/Discount.Service.csproj" />
+    <Project Path="Identity.Service/Identity.Service.csproj" />
+    <Project Path="Orders.Service/Orders.Service.csproj" />
+    <Project Path="Payments.Service/Payments.Service.csproj" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>

@@ -1,0 +1,80 @@
+services:
+
+ catalogdb:
+   image: mongo
+ basketdb:
+   image: redis:alpine
+ discountdb:
+   image: postgres
+
+ orderdb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+ identitydb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+
+ rabbitmq:
+    image: rabbitmq:3-management-alpine
+ pgadmin:
+    image: dpage/pgadmin4
+
+# Services Start 
+ basket:
+    image: ${DOCKER_REGISTRY-}basket
+    build:
+      context: ./Basket.Service 
+      dockerfile: Dockerfile    
+
+ catalog:
+    image: ${DOCKER_REGISTRY-}catalog
+    build:
+      context: ./Catalog.Service
+      dockerfile: Dockerfile
+
+ discount:
+    image: ${DOCKER_REGISTRY-}discount
+    build:
+      context: ./Discount.Service
+      dockerfile: Dockerfile
+
+ ordering:
+    image: ${DOCKER_REGISTRY-}ordering
+    build:
+      context: ./Orders.Service
+      dockerfile: Dockerfile
+
+ payment:
+    image: ${DOCKER_REGISTRY-}payment
+    build:
+      context: ./Payments.Service
+      dockerfile: Dockerfile
+
+ identity:
+    image: ${DOCKER_REGISTRY-}identity
+    build:
+      context: ./Identity.Service
+      dockerfile: Dockerfile 
+      # Services End
+
+ portainer:
+    image: portainer/portainer-ce
+
+ elasticsearch:
+  image: docker.elastic.co/elasticsearch/elasticsearch:8.14.3
+
+ kibana:
+  image: docker.elastic.co/kibana/kibana:8.14.3
+ 
+ ocelot.apigateway:
+  image: ${DOCKER_REGISTRY-}ocelotapigateway
+  build:
+    context: ./ECommerceApiGateWay  # Points to folder containing ECommerceApiGateWay.csproj and Dockerfile
+    dockerfile: Dockerfile
+volumes:
+ mongo_data:
+ portainer_data:
+ postgres_data:
+ orderdb-data:
+ identitydb-data:
+ pgadmin_data:
+ elasticsearch-data:
+ 

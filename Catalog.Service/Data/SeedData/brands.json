@@ -1,0 +1,10 @@
+﻿[
+  { "Id": "63ca5e40e0aa3698b549a001", "Name": "Adidas", "Summary": "Adidas sports brand" },
+  { "Id": "63ca5e40e0aa3698b549a002", "Name": "Nike", "Summary": "Nike sports brand" },
+  { "Id": "63ca5e40e0aa3698b549a003", "Name": "Yonex", "Summary": "Yonex brand" },
+  { "Id": "63ca5e40e0aa3698b549a004", "Name": "Li-Ning", "Summary": "Li-Ning brand" },
+  { "Id": "63ca5e40e0aa3698b549a005", "Name": "Puma", "Summary": "Puma brand" },
+  { "Id": "63ca5e40e0aa3698b549a006", "Name": "Victor", "Summary": "Victor brand" },
+  { "Id": "63ca5e40e0aa3698b549a007", "Name": "Asics", "Summary": "Asics brand" },
+  { "Id": "63ca5e40e0aa3698b549a008", "Name": "Babolat", "Summary": "Babolat brand" }
+]
