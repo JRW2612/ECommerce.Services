@@ -12,6 +12,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Discount.Service/Discount.Service.csproj", "Discount.Service/"]
+COPY ["Logging/Common.Logging.csproj", "Logging/"]
 RUN dotnet restore "./Discount.Service/Discount.Service.csproj"
 COPY . .
 WORKDIR "/src/Discount.Service"
