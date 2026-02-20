@@ -31,9 +31,9 @@
 
 
 	<ItemGroup>
+		<ProjectReference Include="..\Common.Logging\Common.Logging.csproj" />
 		<ProjectReference Include="..\Discount.Service\Discount.Service.csproj" />
 		<ProjectReference Include="..\EventBus.Messages\EventBus.Messages.csproj" />
-		<ProjectReference Include="..\Logging\Common.Logging.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 		<Protobuf Include="Protos\discount.proto" GrpcServices="Client" />

@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Builder;
-using Swashbuckle.AspNetCore;
 using Common.Logging;
 using Identity.Service.Data;
 using Identity.Service.Models;
@@ -8,7 +6,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
-using System.Security.AccessControl;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);

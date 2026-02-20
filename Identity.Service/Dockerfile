@@ -13,7 +13,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Identity.Service/Identity.Service.csproj", "Identity.Service/"]
-COPY ["Logging/Common.Logging.csproj", "Logging/"]
+COPY ["Common.Logging/Common.Logging.csproj", "Common.Logging/"]
 RUN dotnet restore "./Identity.Service/Identity.Service.csproj"
 COPY . .
 WORKDIR "/src/Identity.Service"

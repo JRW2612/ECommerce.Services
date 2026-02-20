@@ -163,8 +163,8 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "Jwt__Key=super_secure_secret_key_1234567890!@#"
-      - "Jwt__Issuer=ecommerce.identity"
-      - "Jwt__Audience=ecommerce.clients"
+      - "Jwt__Issuer=ECommerceApiGateWay.identity"
+      - "Jwt__Audience=ECommerceApiGateWay.clients"
     depends_on:
       - identity
       - catalog

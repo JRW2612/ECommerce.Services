@@ -13,8 +13,8 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Orders.Service/Orders.Service.csproj", "Orders.Service/"]
+COPY ["Common.Logging/Common.Logging.csproj", "Common.Logging/"]
 COPY ["EventBus.Messages/EventBus.Messages.csproj", "EventBus.Messages/"]
-COPY ["Logging/Common.Logging.csproj", "Logging/"]
 RUN dotnet restore "./Orders.Service/Orders.Service.csproj"
 COPY . .
 WORKDIR "/src/Orders.Service"

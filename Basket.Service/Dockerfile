@@ -14,8 +14,8 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Basket.Service/Basket.Service.csproj", "Basket.Service/"]
 COPY ["Discount.Service/Discount.Service.csproj", "Discount.Service/"]
+COPY ["Common.Logging/Common.Logging.csproj", "Common.Logging/"]
 COPY ["EventBus.Messages/EventBus.Messages.csproj", "EventBus.Messages/"]
-COPY ["Logging/Common.Logging.csproj", "Logging/"]
 RUN dotnet restore "./Basket.Service/Basket.Service.csproj"
 COPY . .
 WORKDIR "/src/Basket.Service"

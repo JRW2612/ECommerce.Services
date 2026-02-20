@@ -4,7 +4,6 @@
   </Folder>
   <Folder Name="/Infrastructure/">
     <Project Path="EventBus.Messages/EventBus.Messages.csproj" />
-    <Project Path="Logging/Common.Logging.csproj" />
   </Folder>
   <Folder Name="/Services/">
     <Project Path="Basket.Service/Basket.Service.csproj" />
@@ -14,6 +13,7 @@
     <Project Path="Orders.Service/Orders.Service.csproj" />
     <Project Path="Payments.Service/Payments.Service.csproj" />
   </Folder>
+  <Project Path="Common.Logging/Common.Logging.csproj" Id="5fc36c1e-effb-41cc-8dfb-e6cf1023bb95" />
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>

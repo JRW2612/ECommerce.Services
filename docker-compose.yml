@@ -21,38 +21,38 @@ services:
  basket:
     image: ${DOCKER_REGISTRY-}basket
     build:
-      context: ./Basket.Service 
-      dockerfile: Dockerfile    
+      context: .
+      dockerfile: Basket.Service/Dockerfile    
 
  catalog:
     image: ${DOCKER_REGISTRY-}catalog
     build:
-      context: ./Catalog.Service
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Catalog.Service/Dockerfile
 
  discount:
     image: ${DOCKER_REGISTRY-}discount
     build:
-      context: ./Discount.Service
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Discount.Service/Dockerfile
 
  ordering:
     image: ${DOCKER_REGISTRY-}ordering
     build:
-      context: ./Orders.Service
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Orders.Service/Dockerfile
 
  payment:
     image: ${DOCKER_REGISTRY-}payment
     build:
-      context: ./Payments.Service
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Payments.Service/Dockerfile
 
  identity:
     image: ${DOCKER_REGISTRY-}identity
     build:
-      context: ./Identity.Service
-      dockerfile: Dockerfile 
+      context: .
+      dockerfile: Identity.Service/Dockerfile 
       # Services End
 
  portainer:
@@ -67,8 +67,8 @@ services:
  ocelot.apigateway:
   image: ${DOCKER_REGISTRY-}ocelotapigateway
   build:
-    context: ./ECommerceApiGateWay  # Points to folder containing ECommerceApiGateWay.csproj and Dockerfile
-    dockerfile: Dockerfile
+    context: .
+    dockerfile: ECommerceApiGateWay/Dockerfile
 volumes:
  mongo_data:
  portainer_data:
