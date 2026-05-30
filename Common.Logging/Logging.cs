@@ -1,11 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using Serilog;
-using Serilog.Events;
-using Serilog.Exceptions;
-using Serilog.Sinks.Elasticsearch;
-
-namespace Common.Logging
+﻿namespace Common.Logging
 {
     public static class Logging
     {
